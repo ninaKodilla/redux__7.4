@@ -1,8 +1,8 @@
 import { 
     ADD_COMMENT,
-	EDIT_COMMENT,
-	REMOVE_COMMENT,
-	THUMB_UP_COMMENT,
+    EDIT_COMMENT,
+    REMOVE_COMMENT,
+    THUMB_UP_COMMENT,
     THUMB_DOWN_COMMENT 
 } from './action';
 
@@ -15,7 +15,7 @@ function comments(state=[], action) {
 				text: action.text,
 				votes: 0
 				}, 
-                ...state];
+            ...state];
 
         case REMOVE_COMMENT:
             return state.filter(comment => comment.id !== action.id);
