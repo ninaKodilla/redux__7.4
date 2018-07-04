@@ -7,7 +7,7 @@ import {
 } from './action';
 
 function comments(state=[], action) {
-	switch(action.type) {
+	switch (action.type) {
 
 		case ADD_COMMENT:
 			return [{
